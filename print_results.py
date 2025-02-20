@@ -58,9 +58,9 @@ def print_results(results_dic, results_stats_dic, model,
            None - simply printing results.
     """    
     print(f"Used CNN architecture: {model}")
-    print(f"Number of images: {results_stats_dic["n_images"]}")
-    print(f"Number of Dog Images: {results_stats_dic["n_dogs_img"]}")
-    print(f"Number of \"Not-a\" Dog Images: {results_stats_dic["n_notdogs_img"]}")
+    print(f"Number of images: {results_stats_dic['n_images']}")
+    print(f"Number of Dog Images: {results_stats_dic['n_dogs_img']}")
+    print(f"Number of \"Not-a\" Dog Images: {results_stats_dic['n_notdogs_img']}")
 
     for key, stat in results_stats_dic.items():
         if key.startswith('p'):
