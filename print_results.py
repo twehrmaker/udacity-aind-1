@@ -66,7 +66,7 @@ def print_results(results_dic, results_stats_dic, model,
         if key.startswith('p'):
             print(f"{key.title()}: {stat}%")
 
-    if print_incorrect_dogs and results_stats_dic["n_dogs_img"] + results_stats_dic["n_notdogs_img"] != results_stats_dic["n_images"]:
+    if print_incorrect_dogs and results_stats_dic["n_correct_dogs"] + results_stats_dic["n_correct_notdogs"] != results_stats_dic["n_images"]:
         print("\nMisqualified Dogs:")
         print("-"*10)
         for key, result in results_dic.items():
